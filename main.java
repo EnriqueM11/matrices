@@ -12,6 +12,7 @@ public class main {
 		matrices.suma_diagonal();
 		matrices.mayor();
 		matrices.suma2matrices();
+		matrices.escalar();
 		
 
 	}

@@ -115,4 +115,27 @@ public class Matriz_metodos {
             System.out.print("\n");
         }
 	}
+	public void escalar() {
+		int[][] matriz = {
+				{1,2,3},
+				{4,54,6}};
+		int escalar= 2;
+		
+		int [][] r = new int[matriz.length][matriz[0].length];
+		
+		for (int x=0; x < r.length; x++) {
+			  for (int y=0; y < r[x].length; y++) {
+			    r[x][y] = escalar * matriz[x][y];
+			  }
+			}
+		System.out.println("El resultado es: ");
+		for (int i = 0; i < r.length; i++) {
+            for (int j = 0; j < r[0].length; j++) {
+            	
+                System.out.printf("%d ", r[i][j]);
+            }
+            System.out.print("\n");
+        }
+		
+	}
 	}
