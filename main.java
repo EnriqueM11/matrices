@@ -10,6 +10,8 @@ public class main {
 		matrices.multi();
 		matrices.suma();
 		matrices.suma_diagonal();
+		matrices.mayor();
+		matrices.suma2matrices();
 		
 
 	}

@@ -71,8 +71,48 @@ public class Matriz_metodos {
 		for(int i=0; i<matriz.length;i++) {
 			sumap=sumap+matriz[i][i];
 		}
-		System.out.println("La suma de la diagonal principal es: "+sumap);
+		System.out.println("La suma de la diagonal principal es: "+sumap);	
+	}
+	
+	public void mayor() {
+		int[][] matriz = {
+				{1,2,3},
+				{4,54,6},
+				{7,8,0}};
+		int numeroMayor = matriz[0][0];
+		for (int x=0;x<matriz.length;x++) {
+			  for (int y=0;y<matriz[x].length;y++) {
+			    if (matriz[x][y] > numeroMayor) {
+			      numeroMayor = matriz[x][y];
+			    }
+			  }
+		}
 		
+		System.out.println("El numero mayor es este: "+numeroMayor);
+	}
+	public void suma2matrices() {
+		int[][] matriz = {
+				{1,2,3},
+				{4,54,6},
+				{7,8,0}};
+		int[][] matriz_2 = {
+				{1,4,3},
+				{4,54,6},
+				{6,8,1}};
 		
+		int [][]matrizr= new int[matriz.length][matriz[0].length];
+				
+		
+		for(int i=0; i<matriz.length;i++) {
+			for(int a=0; a<matriz_2.length;a++) {
+				matrizr[i][a]=matriz[i][a]+matriz_2[i][a];
+			}
+		}
+		for (int i = 0; i < matrizr.length; i++) {
+            for (int j = 0; j < matrizr[0].length; j++) {
+                System.out.printf("%d ", matrizr[i][j]);
+            }
+            System.out.print("\n");
+        }
 	}
 	}
